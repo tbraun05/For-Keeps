@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+    <h1>Enter Data</h1>
+    <br />
+    <form action="" method="post" role="form">
+        <div class="form-group">
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <br />
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <br />
+            <label for="option">OR:</label><br>
+            <br />
+            <label for="event">Event Name:</label><br>
+            <input type="text" id="event" name="event"><br>
+            <br />
+
+            <label for="event">Select date:</label><br>
+            <input type="date" id="event" name="event"><br>
+            <br />
+            <br />
+            <label for="event">Event Type:</label><br>
+            <input type="radio" id="birthday" name="event" value="event">
+            <label for="event">Birthday</label><br>
+
+            <input type="radio" id="anniversary" name="event" value="event">
+            <label for="event">Anniversary</label><br>
+
+            <input type="radio" id="important date" name="event" value="event">
+            <label for="event">Important Date</label>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+    {% endblock %}

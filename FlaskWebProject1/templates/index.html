@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>For Keeps</h1>
+    <p class="lead">For Keeps is a free date keeper.  Never miss a birthday, anniversary or any other important date. Create an account to start keeping track of your important dates! </p>
+    <p><a href="{{ url_for('register') }}" class="btn btn-primary btn-large">Register &raquo;</a></p>
+    <p><a href="{{ url_for('login') }}" class="btn btn-primary btn-large">Login &raquo;</a></p>
+</div>
+
+{% endblock %}
